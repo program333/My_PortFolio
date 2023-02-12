@@ -52,7 +52,8 @@
 
         &__buttons-wrapper{
             display: flex;
-            gap: 10px;
+            gap: 25px;
+            
 
             button,a{
                 cursor: pointer;
@@ -74,20 +75,49 @@
     }
 
    
+.Button_responsive{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 70px;
+    font-size: 2rem;
+    background: transparent;
+    color: var(--selected-theme-main-color);
+    border: 1.5px solid var(--selected-theme-main-color);
+    border-radius: 4px;
+    font-weight: 500;
 
+}
 
+// .Button_responsive:hover{
+//     color: #000000;      
+//     background: var(--selected-theme-main-color);
+// }
 
 @media only screen and (max-width :550px ){
     .home__text-wrapper h1{
         font-size: 3rem;
         line-height: 5rem;
     }
+    
 }
 
 @media only screen and (min-width :551px) and (max-width :768px ){
     .home__text-wrapper h1{
         font-size: 4rem;
         line-height: 6rem;
+    }
+    .Button_responsive{
+        display: flex;
+        
+        cursor: pointer;
+        padding: 10px 70px;
+        font-size: 1rem;
+        background: transparent;
+        color: var(--selected-theme-main-color);
+        border: 1.5px solid var(--selected-theme-main-color);
+        border-radius: 4px;
+        font-weight: 500;
     }
 }
 
@@ -96,6 +126,9 @@
         font-size: 6rem;
         line-height: 8rem;
     }
+    
+    
+   
 }
 
 @keyframes typingEffect {

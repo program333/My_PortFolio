@@ -92,6 +92,7 @@ const Home = () => {
               variant="var(--selected-theme-main-color)"
               onClick={handleNewProcess}
               style={{ maxWidth: "270px", height: "70px" }}
+              className="Button_responsive"
             >
               <MdContactPage />
               &nbsp;Hire me
@@ -102,6 +103,7 @@ const Home = () => {
                 href={pdf}
                 target="_blank"
                 style={{ maxWidth: "2700x", height: "70px" }}
+                className="Button_responsive"
               >
                 <AiOutlineDownload />
                 &nbsp;Download Resume

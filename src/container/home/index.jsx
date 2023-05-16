@@ -95,7 +95,7 @@ const Home = () => {
               className="Button_responsive"
             >
               <MdContactPage />
-              &nbsp;Hire me
+              &nbsp;Contact Me
             </Button>
             <Row style={{ justifyContent: "center" }}>
               <Button

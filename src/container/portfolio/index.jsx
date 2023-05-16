@@ -83,23 +83,14 @@ const Portfolio = () => {
             <ProjectCard
               imgPath={imagefive}
               isBlog={false}
-              title="Places Finder"
+              title="Places Storage Website"
               description="It's a MERN stack application where user can login and add his places to website.He can also view the other users places.He can delete and edit the places he added."
               ghLink="https://github.com/program333/mern_place_finder_frontend"
               demoLink="https://mernplacefinder.netlify.app/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={imagetwo}
-              isBlog={false}
-              title="YouTube Prediction"
-              description="Its a machine learning project"
-              ghLink="https://github.com/program333/Youtube-adview-Prediction"
-              
-            />
-          </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={imagesix}
@@ -122,16 +113,7 @@ const Portfolio = () => {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={imagefour}
-              isBlog={false}
-              title="ChatBot"
-              description="Its a JavaScript project"
-              ghLink="https://github.com/program333/ChatBot"
-              demoLink="https://chat-bot-kappa-sepia.vercel.app/"
-            />
-          </Col>
+         
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -141,7 +123,7 @@ const Portfolio = () => {
               description="Using HTML, CSS, JS"
               ghLink="https://github.com/program333/Coffee_Website"
               demoLink="https://program333.github.io/Coffee_Website/"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+            
             />
           </Col>
 

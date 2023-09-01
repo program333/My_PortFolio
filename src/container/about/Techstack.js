@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
+import { CgCPlusPlus ,Cg} from "react-icons/cg";
 import '../../style.scss';
 import {
   DiJavascript1,
@@ -9,7 +9,8 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
-  DiDart
+  DiHtml5
+  
   
 } from "react-icons/di";
 import {SiFlutter} from 'react-icons/si'
@@ -26,6 +27,9 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus/>
        {/* <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="50" height="50"/> </a> */}
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiHtml5/>
       </Col>
       
       <Col xs={4} md={2} className="tech-icons">
@@ -45,18 +49,14 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
+      
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFlutter/>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiDart/>
-      </Col>
+      
     </Row>
   );
 }

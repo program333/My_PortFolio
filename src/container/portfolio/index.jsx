@@ -11,7 +11,8 @@ import imagethree from '../../images/image3.jpg';
 import imagefour from '../../images/image4.jpg';
 import imagefive from '../../images/image5.png';
 import imagesix from '../../images/image6.jpg';
-
+import imageseven from '../../images/image7.jpg';
+import imageeight from '../../images/image8.png';
 const Portfolio = () => {
   const [filtervalue, setFilterValue] = useState(1);
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -83,10 +84,33 @@ const Portfolio = () => {
             <ProjectCard
               imgPath={imagefive}
               isBlog={false}
-              title="Places Storage Website"
+              title="SpotKeeper"
               description="It's a MERN stack application where user can login and add his places to website.He can also view the other users places.He can delete and edit the places he added."
               ghLink="https://github.com/program333/mern_place_finder_frontend"
               demoLink="https://mernplacefinder.netlify.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={imageseven}
+              isBlog={false}
+              title="Face Mask Detection App"
+              description="Face Mask Detection app with flutter using tflite package to provide
+              real-time detection of face masks."
+              ghLink="https://github.com/program333/Face_Mask_Detector_App"
+             
+              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={imageeight}
+              isBlog={false}
+              title="Traffic Sign Classification"
+              description="This model can be used in self driving cars which enable them to
+              automatically recognize traffic signs similarly the driver alert system inside cars will help and protect drivers"
+              ghLink="https://github.com/program333/Traffic-Sign-Classification"
+              
             />
           </Col>
 
@@ -101,6 +125,7 @@ const Portfolio = () => {
               
             />
           </Col>
+          
 
           <Col md={4} className="project-card">
             <ProjectCard

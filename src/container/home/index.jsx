@@ -13,9 +13,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../images/home-main.svg";
 import Home2 from "./Home2";
 import Type from "./Type";
-
+import { useState } from 'react';
+import ChatButton from './ChatButton';
 const Home = () => {
-  
+  const [showChatBot, setShowChatBot] = useState(false);
+
+  const openChatBot = () => {
+    setShowChatBot(true);
+  };
   let navigate = useNavigate();
   const handleNewProcess = () => {
     navigate(`/contact/`);
@@ -110,6 +115,7 @@ const Home = () => {
               </Button>
             </Row>
           </div>
+          <ChatButton/>
         </div>
       </Animate>
       

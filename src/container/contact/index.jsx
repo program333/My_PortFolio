@@ -54,7 +54,7 @@ const Contact = () => {
       />
 
       <div className="container contact__container">
-        <div className="contact__options">
+        {/* <div className="contact__options">
           <h1>Get in touch</h1>
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
@@ -64,18 +64,8 @@ const Contact = () => {
               Send a message
             </a>
           </article>
-          <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
-            <h4>Whatsapp</h4>
-            <h5>Text me</h5>
-            <a
-              href="https://api.whatsapp.com/send?phone=6363299671"
-              target="_blank"
-            >
-              Send a message
-            </a>
-          </article>
-        </div>
+         
+        </div> */}
         <form ref={form} onSubmit={sendEmail}>
           <h1>Contact me</h1>
           <input
@@ -84,6 +74,7 @@ const Contact = () => {
             placeholder="Your Full Name"
             required
           />
+          
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea
             name="message"
@@ -91,13 +82,13 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-
+          <br></br>
           <button type="submit" className="button form-submit-button">
             Send Message
           </button>
         </form>
 
-        <div className="contact__options__social">
+        {/* <div className="contact__options__social">
           <article className="contact__option__social">
            
             <a
@@ -118,18 +109,13 @@ const Contact = () => {
             >
              <FaTwitter size={32} className="contact__option-icon" />
             </a>
-            <a
-              href="https://api.whatsapp.com/send?phone=6363299671"
-              target="_blank"
-            >
-               <FaWhatsapp size={32} className="contact__option-icon" />
-            </a>
+            
 
             
            
           
           </article>
-        </div>
+        </div> */}
       </div>
     </section>
   );
